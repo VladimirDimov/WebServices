@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cookies.Models", "Models\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesSystem.Data", "CookiesSystem.Data\CookiesSystem.Data.csproj", "{FEA6EEBE-7125-4E00-9B59-4212532326FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesSystem.Web", "CookiesSystem.Web\CookiesSystem.Web.csproj", "{4218A730-75F8-4C4B-80A4-5CED324034D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FEA6EEBE-7125-4E00-9B59-4212532326FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEA6EEBE-7125-4E00-9B59-4212532326FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEA6EEBE-7125-4E00-9B59-4212532326FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4218A730-75F8-4C4B-80A4-5CED324034D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4218A730-75F8-4C4B-80A4-5CED324034D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4218A730-75F8-4C4B-80A4-5CED324034D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4218A730-75F8-4C4B-80A4-5CED324034D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
