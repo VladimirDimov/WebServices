@@ -9,6 +9,7 @@
         {
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            DatabaseConfig.Initialize();
         }
     }
 }
