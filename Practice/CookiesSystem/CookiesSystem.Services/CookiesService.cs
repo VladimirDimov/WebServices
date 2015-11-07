@@ -5,7 +5,7 @@
     using CookiesSytem.Common;
     using System.Linq;
 
-    class CookiesService : ICookiesService
+    public class CookiesService : ICookiesService
     {
         private IRepository<Cookie> cookies;
 

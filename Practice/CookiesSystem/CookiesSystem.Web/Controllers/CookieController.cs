@@ -1,6 +1,7 @@
 ﻿namespace CookiesSystem.Web.Controllers
 {
     using Cookies.Models;
+    using CookiesSystem.Data;
     using CookiesSystem.Services;
     using System;
     using System.Collections.Generic;
@@ -9,6 +10,11 @@
     public class CookieController : ApiController
     {
         ICookiesService cookiesService;
+
+        //public CookieController()
+        //{
+        //    this.cookiesService = new CookiesService(new EfGenericRepository<Cookie>(new CookiesSystemDbContext()));
+        //}
 
         public CookieController(ICookiesService cookiesService)
         {
