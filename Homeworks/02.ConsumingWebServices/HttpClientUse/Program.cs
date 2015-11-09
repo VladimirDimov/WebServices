@@ -47,12 +47,11 @@ namespace HttpClientUse
                 });
 
                 Console.Clear();
-                Console.WriteLine("Page: " + page);
+                Console.WriteLine("Page: {0}/{1}", page, albumsCollection.Count/PageSize + 1);
                 Console.WriteLine(string.Join(Environment.NewLine, pageView));
                 Console.WriteLine("Press ENTER to view next page");
                 Console.ReadLine();
             } while (pageAlbums.Count != 0);
-
         }
     }
 }
