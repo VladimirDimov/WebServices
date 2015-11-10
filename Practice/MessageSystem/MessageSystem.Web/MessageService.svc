@@ -2,4 +2,4 @@
     Language="C#"
     Debug="true"
     Service="MessageSystem.Services.MessageService"
-     %>
+    Factory="System.ServiceModel.Activation.WebServiceHostFactory" %>

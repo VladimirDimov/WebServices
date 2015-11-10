@@ -14,5 +14,11 @@
                 new Message{Text = "Some text three", DateSend = DateTime.Now}
             };
         }
+
+
+        public void Add(Message message)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
