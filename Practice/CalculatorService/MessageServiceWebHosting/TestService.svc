@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Service="MmessageService.MessageService"  Language="C#" Factory="System."%>
+﻿<%@ ServiceHost Service="MmessageService.MessageService"  Language="C#" Factory="System.ServiceModel.Activation.WebServiceHostFactory" %>
