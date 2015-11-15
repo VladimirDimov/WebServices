@@ -1,5 +1,5 @@
 ﻿<%@ ServiceHost 
     Language="C#" 
     Debug="true" 
-    Service="DayOfWeek.Service.DayOfWeekService"
+    Service="StringCounter.Service.StringCounterService" 
     %>

@@ -1,12 +1,12 @@
 ﻿namespace DayOfWeek.Service
 {
     using System;
-    using System.Collections.Generic;
-    using System.ServiceModel;
-    using System.ServiceModel.Web;
+    using System.ServiceModel.Activation;
 
+    [AspNetCompatibilityRequirements(
+        RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class DayOfWeekService : IDayOfWeekService
-    {
+    {        
         public string Today()
         {
            string[] DaysOfWeek = new string[7]

@@ -1,14 +1,13 @@
 ﻿namespace DayOfWeek.Service
 {
-    using System.Collections.Generic;
     using System.ServiceModel;
-    using System.ServiceModel.Web; // Needed for [WebGet]
+    using System.ServiceModel.Web;
 
-    [ServiceContract]
+    [ServiceContract]    
     public interface IDayOfWeekService
     {
         [OperationContract]
         [WebGet]
-        string Today();        
+        string Today();     
     }
 }

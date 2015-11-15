@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C0846AF6-B784-4B4A-8647-0B18886F5D36}</ProjectGuid>
+    <ProjectGuid>{1828A562-C0E3-49ED-84C8-94EA97E7F95D}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DayOfWeek.Service.Host</RootNamespace>
-    <AssemblyName>DayOfWeek.Service.Host</AssemblyName>
+    <RootNamespace>StringCounter.Hosting</RootNamespace>
+    <AssemblyName>StringCounter.Hosting</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -60,25 +60,25 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="StringCounterService.svc" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DayOfWeek.Service\DayOfWeek.Service.csproj">
-      <Project>{b0cf75a3-bef8-4a17-aea9-ce447b10a686}</Project>
-      <Name>DayOfWeek.Service</Name>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\string-counter\StringCounter.Service\StringCounter.Service.csproj">
+      <Project>{c76203f0-053c-49ec-9b5a-6808ac5d1a67}</Project>
+      <Name>StringCounter.Service</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DayOfWeekService.svc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="web.config" />
-    <None Include="web.Debug.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
-    <None Include="web.Release.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -93,9 +93,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>56599</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50354/</IISUrl>
+          <IISUrl>http://localhost:56599/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
