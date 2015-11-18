@@ -19,8 +19,15 @@
 
         public Category GetByName(string name)
         {
-            return this.categories.All()
+            var categoryToReturn = this.categories.All()
                 .FirstOrDefault(c => c.Name == name);
+
+            if (categoryToReturn == null)
+            {
+                throw new ArgumentException("Invalid category name!");
+            }
+
+            return categoryToReturn;
         }
     }
 }

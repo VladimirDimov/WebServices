@@ -1,11 +1,11 @@
 ﻿using Articles.Models;
 using System;
 using System.Collections.Generic;
+
 namespace Articles.Web.Models.BindingModels
 {
-    public class ArticleBindingModel
+    public class ArticleRequestModel
     {
-
         public string Title { get; set; }
 
         public string Content { get; set; }

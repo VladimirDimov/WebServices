@@ -90,6 +90,7 @@
   <ItemGroup>
     <Compile Include="ArticlesService.cs" />
     <Compile Include="CategoriesService.cs" />
+    <Compile Include="CommentsService.cs" />
     <Compile Include="Contracts\IArticlesService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TagsService.cs" />
