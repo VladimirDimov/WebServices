@@ -1,0 +1,9 @@
+1. Rename the namespaces.
+
+2. Rename classes.
+
+3. Rename projects.
+
+4. Close solution and rename the folders.
+
+5. Open project and where there are errors remove refferences and check them again. 
